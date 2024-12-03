@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 12px;
+  font-family: '0xProto Nerd Font', monospace;
+}
+
+window {
+  padding: 0px 8px;
+  margin: 0px;
+  background: transparent;
+}
+
+#clock {
+  padding: 2px 16px;
+  margin: 4px 0;
+  border-radius: 15rem;
+  background-color: #1f2335;
+}
+
+#battery {
+  padding: 2px 12px;
+  margin: 4px 0;
+  border-radius: 15rem;
+  background-color: #1f2335;
+  margin-right: 4px;
+}
+
+#network {
+  padding: 2px 12px;
+  margin: 4px 0;
+  border-radius: 15rem;
+  background-color: #1f2335;
+  margin-right: 4px;
+}
+
+#custom-pacman {
+  padding: 2px 12px;
+  margin: 4px 0;
+  border-radius: 15rem;
+  background-color: #1f2335;
+  margin-right: 4px;
+}
+
+#custom-audio {
+  padding: 2px 12px;
+  margin: 4px 0;
+  border-radius: 15rem;
+  background-color: #1f2335;
+  margin-right: 4px;
+}
+

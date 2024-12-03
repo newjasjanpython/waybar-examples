@@ -1,0 +1,67 @@
+{
+  "position": "top",
+  "height": 30,
+  "layer": "top",
+  "modules-left": [
+    
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "custom/audio",
+    "custom/pacman",
+    "network",
+    "network#ipshown",
+    "battery"
+  ],
+  "battery": {
+    "interval": 60,
+    "states": {
+        "warning": 20,
+        "critical": 10
+    },
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "max-length": 25
+  },
+  "network": {
+    "interface": "wlan0",
+    "format-wifi": "{icon} {signalStrength}%",
+    "format-icons": ["󰣾", "󰣴", "󰣸", "󰣺"],
+    "format-ethernet": "{ipaddr} 󰈀",
+    "format-disconnected": "󰣼",
+    "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+    "tooltip-format-wifi": "{icon} {essid} {signalStrength}%",
+    "tooltip-format-ethernet": "󰈀 {ifname}",
+    "tooltip-format-disconnected": "󰣼 Disconnected",
+    "max-length": 50
+  },
+  "network#ipshown": {
+    "interface": "wlan0",
+    "format": " {ipaddr}",
+    "tooltip-format": " {ifname} : 󰸋 {essid} : 󰩠 {ipaddr}"
+  },
+  "custom/pacman": {
+    "format": "{icon}",
+    "return-type": "json",
+    "format-icons": {
+      "pending-updates": "󰮯",
+      "updated": ""
+    },
+    "exec-if": "which waybar-updates",
+    "exec": "waybar-updates"
+  },
+  "custom/crypto": {
+    "format": "{}",
+    "interval": 600,
+    "return-type": "json",
+    "exec": "waybar-crypto",
+    "exec-if": "ping pro-api.coinmarketcap.com -c1"
+  },
+  "custom/audio": {
+    "interval": "once",
+    "return-type": "json",
+    "exec": "python ~/Projects/waybar-examples/waybar-examples/newjasjan/audio.py"
+  }
+}
