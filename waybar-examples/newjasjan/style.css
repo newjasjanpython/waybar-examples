@@ -9,44 +9,37 @@
 window {
   padding: 0px 8px;
   margin: 0px;
-  background: transparent;
+  background: rgba(36, 40, 59, 0.728);
+}
+
+#workspaces button {
+  padding: 0 4px;
+  margin: 4px 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+#workspaces button.active {
+  background-color: #ff9e64;
 }
 
 #clock {
   padding: 2px 16px;
   margin: 4px 0;
-  border-radius: 15rem;
+  border-radius: 4px;
   background-color: #1f2335;
 }
 
-#battery {
-  padding: 2px 12px;
-  margin: 4px 0;
-  border-radius: 15rem;
-  background-color: #1f2335;
-  margin-right: 4px;
-}
-
-#network {
-  padding: 2px 12px;
-  margin: 4px 0;
-  border-radius: 15rem;
-  background-color: #1f2335;
-  margin-right: 4px;
-}
-
-#custom-pacman {
-  padding: 2px 12px;
-  margin: 4px 0;
-  border-radius: 15rem;
-  background-color: #1f2335;
-  margin-right: 4px;
-}
-
+#battery,
+#cpu,
+#network,
+#memory,
+#custom-pacman,
 #custom-audio {
   padding: 2px 12px;
   margin: 4px 0;
-  border-radius: 15rem;
+  border-radius: 4px;
   background-color: #1f2335;
   margin-right: 4px;
 }

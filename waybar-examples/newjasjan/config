@@ -1,20 +1,27 @@
 {
   "position": "top",
-  "height": 30,
   "layer": "top",
   "modules-left": [
-    
+    "custom/apps",
+    "hyprland/workspaces",
+    "hyprland/window"
   ],
   "modules-center": [
     "clock"
   ],
   "modules-right": [
+    "cpu",
+    "memory",
     "custom/audio",
     "custom/pacman",
     "network",
     "network#ipshown",
     "battery"
   ],
+  "clock": {
+     "format": "{0:%H:%M:%S}",
+     "interval": 1
+  },
   "battery": {
     "interval": 60,
     "states": {
@@ -63,5 +70,8 @@
     "interval": "once",
     "return-type": "json",
     "exec": "python ~/Projects/waybar-examples/waybar-examples/newjasjan/audio.py"
+  },
+  "custom/apps": {
+    "format": " "
   }
 }
